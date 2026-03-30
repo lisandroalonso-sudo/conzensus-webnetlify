@@ -24,7 +24,7 @@
   --shadow-lg: 0 16px 48px rgba(0,0,0,0.12);
 }
 
-html { scroll-behavior: smooth; }
+html { scroll-behavior: smooth; overflow-x: hidden; }
 
 body {
   font-family: var(--font-body);
