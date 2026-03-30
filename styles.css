@@ -120,7 +120,7 @@ img { max-width: 100%; display: block; }
 .hero-tag { display: inline-flex; align-items: center; gap: 8px; font-size: 13px; font-weight: 500; color: var(--mid); margin-bottom: 28px; }
 .dot { width: 8px; height: 8px; background: #4caf50; border-radius: 50%; box-shadow: 0 0 0 3px rgba(76,175,80,0.2); animation: pulse 2s infinite; }
 @keyframes pulse { 0%, 100% { box-shadow: 0 0 0 3px rgba(76,175,80,0.2); } 50% { box-shadow: 0 0 0 6px rgba(76,175,80,0.1); } }
-.hero-title { font-family: var(--font-display); font-size: clamp(44px, 6vw, 72px); font-weight: 800; line-height: 1.05; letter-spacing: -2px; color: var(--dark); margin-bottom: 24px; }
+.hero-title { font-family: var(--font-display); font-size: clamp(36px, 5vw, 72px); font-weight: 800; line-height: 1.05; letter-spacing: -2px; color: var(--dark); margin-bottom: 24px; }
 .hero-title em { font-style: normal; color: var(--yellow); }
 .hero-sub { font-size: 18px; color: var(--mid); max-width: 460px; line-height: 1.7; margin-bottom: 36px; }
 .hero-actions { display: flex; gap: 12px; flex-wrap: wrap; margin-bottom: 56px; }
