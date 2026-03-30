@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Blog — Conzensus</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<nav class="nav" id="nav">
+  <div class="nav-inner">
+    <a href="index.html" class="logo">
+      <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+        <path d="M16 3C10 3 5 8 5 14c0 4 2 7.5 5 9.5L16 29l6-5.5c3-2 5-5.5 5-9.5 0-6-5-11-11-11z" stroke="#D4B800" stroke-width="2" fill="none"/>
+        <path d="M11 14c0-2.8 2.2-5 5-5s5 2.2 5 5" stroke="#D4B800" stroke-width="2" stroke-linecap="round"/>
+        <path d="M9 17l4-3 3 2 4-4 3 2" stroke="#D4B800" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+      <span>conzensus</span>
+    </a>
+    <button class="hamburger" id="hamburger"><span></span><span></span><span></span></button>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="index.html" class="nav-link">Inicio</a></li>
+      <li><a href="servicios.html" class="nav-link">Servicios</a></li>
+      <li><a href="equipo.html" class="nav-link">Equipo</a></li>
+      <li><a href="blog.html" class="nav-link active">Blog</a></li>
+      <li><a href="contacto.html" class="nav-link nav-cta">Contacto</a></li>
+    </ul>
+  </div>
+</nav>
+
+<main>
+  <div class="page-hero">
+    <div class="section-tag">Novedades & Recursos</div>
+    <h1>Blog <em style="font-style:normal;color:#D4B800">Conzensus</em></h1>
+    <p>Artículos, guías y novedades sobre finanzas, contabilidad y gestión empresarial. Escritos por nuestro equipo de profesionales.</p>
+  </div>
+
+  <div class="container blog-full">
+    <div class="blog-cats">
+      <button class="blog-cat active">Todos</button>
+      <button class="blog-cat">Finanzas</button>
+      <button class="blog-cat">Impuestos</button>
+      <button class="blog-cat">PyMES</button>
+      <button class="blog-cat">Business Intelligence</button>
+      <button class="blog-cat">Startups</button>
+    </div>
+
+    <div class="blog-full-grid">
+      <article class="blog-full-card">
+        <div class="bfc-thumb" style="background:#FFFBE6; font-size:48px;">📊</div>
+        <div class="bfc-body">
+          <div class="bc-tag">Finanzas</div>
+          <h3>Cómo preparar tu empresa para el cierre fiscal 2025</h3>
+          <p>Los pasos clave para ordenar tu contabilidad, anticipar obligaciones impositivas y cerrar el año sin sorpresas desagradables.</p>
+          <div class="bfc-foot">
+            <span class="bfc-date">Marzo 2025 · Laura Samos</span>
+            <a href="#" class="bc-read">Leer →</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="blog-full-card">
+        <div class="bfc-thumb" style="background:#f0f0ea; font-size:48px;">🏢</div>
+        <div class="bfc-body">
+          <div class="bc-tag">PyMES</div>
+          <h3>Por qué las empresas familiares necesitan profesionalizar sus procesos</h3>
+          <p>El momento ideal para dar el salto hacia una gestión más estructurada, escalable y preparada para crecer.</p>
+          <div class="bfc-foot">
+            <span class="bfc-date">Febrero 2025 · Emilia Rinaldoni</span>
+            <a href="#" class="bc-read">Leer →</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="blog-full-card">
+        <div class="bfc-thumb" style="background:#FFFBE6; font-size:48px;">📈</div>
+        <div class="bfc-body">
+          <div class="bc-tag">Business Intelligence</div>
+          <h3>Power BI para contadores: transformar datos en decisiones</h3>
+          <p>Cómo los dashboards interactivos están cambiando la forma de hacer reporting financiero en las empresas modernas.</p>
+          <div class="bfc-foot">
+            <span class="bfc-date">Enero 2025 · Lucía del Campo</span>
+            <a href="#" class="bc-read">Leer →</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="blog-full-card">
+        <div class="bfc-thumb" style="background:#f0f0ea; font-size:48px;">💼</div>
+        <div class="bfc-body">
+          <div class="bc-tag">Finanzas</div>
+          <h3>Cash flow: el indicador que toda PyME debe monitorear de cerca</h3>
+          <p>Una guía práctica para entender la diferencia entre rentabilidad y liquidez, y por qué importa para la supervivencia del negocio.</p>
+          <div class="bfc-foot">
+            <span class="bfc-date">Diciembre 2024 · Lisandro Alonso</span>
+            <a href="#" class="bc-read">Leer →</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="blog-full-card">
+        <div class="bfc-thumb" style="background:#FFFBE6; font-size:48px;">🚀</div>
+        <div class="bfc-body">
+          <div class="bc-tag">Startups</div>
+          <h3>Los 5 errores financieros más comunes en startups argentinas</h3>
+          <p>Desde no separar las finanzas personales hasta no proyectar el runway: errores que pueden costar el futuro del emprendimiento.</p>
+          <div class="bfc-foot">
+            <span class="bfc-date">Noviembre 2024 · Facundo Rogé</span>
+            <a href="#" class="bc-read">Leer →</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="blog-full-card">
+        <div class="bfc-thumb" style="background:#f0f0ea; font-size:48px;">📋</div>
+        <div class="bfc-body">
+          <div class="bc-tag">Impuestos</div>
+          <h3>Monotributo vs. Responsable Inscripto: ¿cuándo conviene el cambio?</h3>
+          <p>Analizamos los factores clave para tomar esta decisión estratégica en el momento justo, sin pagar de más ni arriesgarse a sanciones.</p>
+          <div class="bfc-foot">
+            <span class="bfc-date">Octubre 2024 · Antonella Rinaldoni</span>
+            <a href="#" class="bc-read">Leer →</a>
+          </div>
+        </div>
+      </article>
+    </div>
+  </div>
+</main>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand"><a href="index.html" class="logo"><svg width="28" height="28" viewBox="0 0 32 32" fill="none"><path d="M16 3C10 3 5 8 5 14c0 4 2 7.5 5 9.5L16 29l6-5.5c3-2 5-5.5 5-9.5 0-6-5-11-11-11z" stroke="#D4B800" stroke-width="2" fill="none"/><path d="M11 14c0-2.8 2.2-5 5-5s5 2.2 5 5" stroke="#D4B800" stroke-width="2" stroke-linecap="round"/><path d="M9 17l4-3 3 2 4-4 3 2" stroke="#D4B800" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg><span>conzensus</span></a><p>Un equipo que te acompaña conectando ideas y resultados para tu empresa.</p></div>
+      <div class="footer-links"><h5>Sitio</h5><a href="index.html">Inicio</a><a href="servicios.html">Servicios</a><a href="equipo.html">Equipo</a><a href="blog.html">Blog</a><a href="contacto.html">Contacto</a></div>
+      <div class="footer-links"><h5>Servicios</h5><a href="servicios.html#finanzas">Finanzas Corporativas</a><a href="servicios.html#procesos">Profesionalización</a><a href="servicios.html#outsourcing">Outsourcing Contable</a><a href="servicios.html#asesoramiento">Asesoramiento Contable</a></div>
+      <div class="footer-contact"><h5>Contacto</h5><a href="tel:+5492617252297">+549 261 725 2297</a><a href="mailto:info@conzensus.ar">info@conzensus.ar</a></div>
+    </div>
+    <div class="footer-bottom"><span>© 2025 Conzensus. Todos los derechos reservados.</span></div>
+  </div>
+</footer>
+<script>
+document.querySelectorAll('.blog-cat').forEach(btn => {
+  btn.addEventListener('click', function() {
+    document.querySelectorAll('.blog-cat').forEach(b => b.classList.remove('active'));
+    this.classList.add('active');
+  });
+});
+</script>
+<script src="scripts.js"></script>
+</body>
+</html>

@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contacto — Conzensus</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<nav class="nav" id="nav">
+  <div class="nav-inner">
+    <a href="index.html" class="logo">
+      <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+        <path d="M16 3C10 3 5 8 5 14c0 4 2 7.5 5 9.5L16 29l6-5.5c3-2 5-5.5 5-9.5 0-6-5-11-11-11z" stroke="#D4B800" stroke-width="2" fill="none"/>
+        <path d="M11 14c0-2.8 2.2-5 5-5s5 2.2 5 5" stroke="#D4B800" stroke-width="2" stroke-linecap="round"/>
+        <path d="M9 17l4-3 3 2 4-4 3 2" stroke="#D4B800" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+      <span>conzensus</span>
+    </a>
+    <button class="hamburger" id="hamburger"><span></span><span></span><span></span></button>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="index.html" class="nav-link">Inicio</a></li>
+      <li><a href="servicios.html" class="nav-link">Servicios</a></li>
+      <li><a href="equipo.html" class="nav-link">Equipo</a></li>
+      <li><a href="blog.html" class="nav-link">Blog</a></li>
+      <li><a href="contacto.html" class="nav-link nav-cta active">Contacto</a></li>
+    </ul>
+  </div>
+</nav>
+
+<main>
+  <div class="page-hero">
+    <div class="section-tag">Hablemos</div>
+    <h1>¿Cómo podemos<br><em style="font-style:normal;color:#D4B800">ayudarte?</em></h1>
+    <p>Sin vueltas. Contanos cuál es el desafío de tu empresa y te decimos si podemos ayudarte.</p>
+  </div>
+
+  <div class="container">
+    <div class="contact-grid">
+      <div class="contact-info">
+        <h2>Estamos disponibles para vos</h2>
+        <p>Ya sea que tengas una pregunta puntual o necesites un servicio continuo, el primer paso es una conversación. Sin compromiso.</p>
+
+        <div class="contact-items">
+          <div class="ci-item">
+            <div class="ci-icon">📱</div>
+            <div>
+              <div class="ci-label">WhatsApp / Teléfono</div>
+              <a href="tel:+5492617252297" class="ci-val">+549 261 725 2297</a>
+            </div>
+          </div>
+          <div class="ci-item">
+            <div class="ci-icon">✉️</div>
+            <div>
+              <div class="ci-label">Email</div>
+              <a href="mailto:info@conzensus.ar" class="ci-val">info@conzensus.ar</a>
+            </div>
+          </div>
+          <div class="ci-item">
+            <div class="ci-icon">📍</div>
+            <div>
+              <div class="ci-label">Ubicación</div>
+              <div class="ci-val">Mendoza, Argentina</div>
+            </div>
+          </div>
+        </div>
+
+        <div style="background:var(--yellow-bg);border-radius:var(--radius);padding:24px;border:1px solid rgba(212,184,0,0.3);">
+          <p style="font-family:var(--font-display);font-size:15px;font-weight:700;margin-bottom:8px;">¿Preferís hablar directamente?</p>
+          <p style="font-size:14px;color:var(--mid);margin-bottom:16px;">Escribinos por WhatsApp y te respondemos rápido.</p>
+          <a href="https://wa.me/5492617252297?text=Hola, quiero saber más sobre los servicios de Conzensus" target="_blank" class="btn btn-primary" style="width:100%;justify-content:center;">
+            Escribir por WhatsApp →
+          </a>
+        </div>
+      </div>
+
+      <div class="contact-form">
+        <h3>Envianos un mensaje</h3>
+        <div class="form-row">
+          <div class="form-group">
+            <label>Nombre</label>
+            <input type="text" placeholder="Tu nombre">
+          </div>
+          <div class="form-group">
+            <label>Empresa</label>
+            <input type="text" placeholder="Nombre de tu empresa">
+          </div>
+        </div>
+        <div class="form-group">
+          <label>Email</label>
+          <input type="email" placeholder="tu@email.com">
+        </div>
+        <div class="form-group">
+          <label>Teléfono (opcional)</label>
+          <input type="tel" placeholder="+549 261 ...">
+        </div>
+        <div class="form-group">
+          <label>¿En qué podemos ayudarte?</label>
+          <select>
+            <option value="">Seleccioná un servicio</option>
+            <option>Finanzas Corporativas</option>
+            <option>Profesionalización de Áreas y Procesos</option>
+            <option>Outsourcing Contable</option>
+            <option>Asesoramiento Contable y Administrativo</option>
+            <option>No sé bien, quiero conversar</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label>Contanos más (opcional)</label>
+          <textarea placeholder="Describí brevemente tu empresa y cuál es el principal desafío que enfrentás..."></textarea>
+        </div>
+        <button class="btn btn-primary form-submit" onclick="handleSubmit(this)">Enviar mensaje →</button>
+      </div>
+    </div>
+  </div>
+</main>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand"><a href="index.html" class="logo"><svg width="28" height="28" viewBox="0 0 32 32" fill="none"><path d="M16 3C10 3 5 8 5 14c0 4 2 7.5 5 9.5L16 29l6-5.5c3-2 5-5.5 5-9.5 0-6-5-11-11-11z" stroke="#D4B800" stroke-width="2" fill="none"/><path d="M11 14c0-2.8 2.2-5 5-5s5 2.2 5 5" stroke="#D4B800" stroke-width="2" stroke-linecap="round"/><path d="M9 17l4-3 3 2 4-4 3 2" stroke="#D4B800" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg><span>conzensus</span></a><p>Un equipo que te acompaña conectando ideas y resultados para tu empresa.</p></div>
+      <div class="footer-links"><h5>Sitio</h5><a href="index.html">Inicio</a><a href="servicios.html">Servicios</a><a href="equipo.html">Equipo</a><a href="blog.html">Blog</a><a href="contacto.html">Contacto</a></div>
+      <div class="footer-links"><h5>Servicios</h5><a href="servicios.html#finanzas">Finanzas Corporativas</a><a href="servicios.html#procesos">Profesionalización</a><a href="servicios.html#outsourcing">Outsourcing Contable</a><a href="servicios.html#asesoramiento">Asesoramiento Contable</a></div>
+      <div class="footer-contact"><h5>Contacto</h5><a href="tel:+5492617252297">+549 261 725 2297</a><a href="mailto:info@conzensus.ar">info@conzensus.ar</a></div>
+    </div>
+    <div class="footer-bottom"><span>© 2025 Conzensus. Todos los derechos reservados.</span></div>
+  </div>
+</footer>
+
+<script>
+function handleSubmit(btn) {
+  btn.textContent = '¡Mensaje enviado! ✓';
+  btn.style.background = '#2a9d3a';
+  btn.disabled = true;
+}
+</script>
+<script src="scripts.js"></script>
+</body>
+</html>
