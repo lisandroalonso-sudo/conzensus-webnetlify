@@ -25,6 +25,7 @@
       <li><a href="equipo.html" class="nav-link">Equipo</a></li>
       <li><a href="blog.html" class="nav-link">Blog</a></li>
       <li><a href="contacto.html" class="nav-link nav-cta active">Contacto</a></li>
+      <li><a href="contacto.html#agenda" class="nav-link">Agendá una reunión</a></li>
     </ul>
   </div>
 </nav>
@@ -124,10 +125,36 @@
           </button>
 
           <p id="formMessage" style="margin-top:12px;font-size:14px;display:none;"></p>
+
+          <a href="#agenda" class="btn btn-ghost" style="margin-top:12px;">
+            Prefiero agendar una reunión →
+          </a>
         </form>
       </div>
     </div>
   </div>
+
+  <section class="agenda-section" id="agenda">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-tag">Reuniones</div>
+        <h2 class="section-title">Agendá una <em>reunión</em></h2>
+        <p class="body-text">
+          Elegí el día y horario que te quede cómodo para una primera conversación con nuestro equipo.
+        </p>
+      </div>
+
+      <div class="agenda-embed">
+        <iframe
+          src="https://calendar.google.com/calendar/appointments/schedules/AcZssZ0dQAZlpY0D4k2pWkt3N8kASw7nlkZzEgkNfyfZdUxSKBVDIQdqWvR7NGJXZCdHrRFBotVoZxny?gv=true"
+          width="100%"
+          height="700"
+          frameborder="0"
+          style="border:0;">
+        </iframe>
+      </div>
+    </div>
+  </section>
 </main>
 
 <footer class="footer">
@@ -160,7 +187,7 @@
       <div class="footer-contact">
         <h5>Contacto</h5>
         <a href="tel:+5492614666936">+549 261 466 6936</a>
-        <a href="mailto:info@conzensus.ar">info@conzensus.ar</a>
+        <a href="mailto:contacto@conzensus.ar">contacto@conzensus.ar</a>
       </div>
     </div>
 
@@ -171,7 +198,7 @@
 </footer>
 
 <script>
-  const SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbzd2kwE52eY9EjRnDwBpxLxy-dsCL1i1C6nv050dh3_E5nf7xcNWxFtPhbK9CwnBGrmoA/exec';
+  const SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbz_YCaiRQ3XU9mpqHv1FXM3N0YoOB2fX1nLSOqgPpTJsb_JZKvjhVLKSt28UNf5hTwsbw/exec';
 
   const form = document.getElementById('contactForm');
   const submitBtn = document.getElementById('submitBtn');
@@ -222,6 +249,23 @@
       console.error(error);
     }
   });
+
+  const agendaSection = document.getElementById('agenda');
+
+  if (agendaSection) {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            agendaSection.classList.add('is-visible');
+          }
+        });
+      },
+      { threshold: 0.15 }
+    );
+
+    observer.observe(agendaSection);
+  }
 </script>
 
 <script src="scripts.js"></script>
