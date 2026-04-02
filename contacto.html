@@ -1,22 +1,24 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Contacto — Conzensus</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet" crossorigin="anonymous">
-<link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contacto — Conzensus</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet" crossorigin="anonymous">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
 <nav class="nav" id="nav">
   <div class="nav-inner">
-      <a href="index.html" class="logo logo-full">
+    <a href="index.html" class="logo logo-full">
       <img src="img/logo-conzensus.svg" alt="Conzensus" class="logo-full-mark">
-      </a>
-    <button class="hamburger" id="hamburger"><span></span><span></span><span></span></button>
+    </a>
+    <button class="hamburger" id="hamburger" aria-label="Abrir menú">
+      <span></span><span></span><span></span>
+    </button>
     <ul class="nav-links" id="nav-links">
       <li><a href="index.html" class="nav-link">Inicio</a></li>
       <li><a href="servicios.html" class="nav-link">Servicios</a></li>
@@ -48,6 +50,7 @@
               <a href="tel:+5492614666936" class="ci-val">+549 261 466 6936</a>
             </div>
           </div>
+
           <div class="ci-item">
             <div class="ci-icon">✉️</div>
             <div>
@@ -55,6 +58,7 @@
               <a href="mailto:contacto@conzensus.ar" class="ci-val">contacto@conzensus.ar</a>
             </div>
           </div>
+
           <div class="ci-item">
             <div class="ci-icon">📍</div>
             <div>
@@ -67,7 +71,7 @@
         <div style="background:var(--yellow-bg);border-radius:var(--radius);padding:24px;border:1px solid rgba(212,184,0,0.3);">
           <p style="font-family:var(--font-display);font-size:15px;font-weight:700;margin-bottom:8px;">¿Preferís hablar directamente?</p>
           <p style="font-size:14px;color:var(--mid);margin-bottom:16px;">Escribinos por WhatsApp y te respondemos rápido.</p>
-          <a href="https://wa.me/5492614666936?text=Hola, quiero saber más sobre los servicios de Conzensus" target="_blank" class="btn btn-primary" style="width:100%;justify-content:center;">
+          <a href="https://wa.me/5492614666936?text=Hola, quiero saber más sobre los servicios de Conzensus" target="_blank" rel="noopener noreferrer" class="btn btn-primary" style="width:100%;justify-content:center;">
             Escribir por WhatsApp →
           </a>
         </div>
@@ -75,40 +79,52 @@
 
       <div class="contact-form">
         <h3>Envianos un mensaje</h3>
-        <div class="form-row">
-          <div class="form-group">
-            <label>Nombre</label>
-            <input type="text" placeholder="Tu nombre">
+
+        <form id="contactForm">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="nombre">Nombre</label>
+              <input id="nombre" name="nombre" type="text" placeholder="Tu nombre" required>
+            </div>
+            <div class="form-group">
+              <label for="empresa">Empresa</label>
+              <input id="empresa" name="empresa" type="text" placeholder="Nombre de tu empresa">
+            </div>
           </div>
+
           <div class="form-group">
-            <label>Empresa</label>
-            <input type="text" placeholder="Nombre de tu empresa">
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" placeholder="tu@email.com" required>
           </div>
-        </div>
-        <div class="form-group">
-          <label>Email</label>
-          <input type="email" placeholder="tu@email.com">
-        </div>
-        <div class="form-group">
-          <label>Teléfono (opcional)</label>
-          <input type="tel" placeholder="+549 261 ...">
-        </div>
-        <div class="form-group">
-          <label>¿En qué podemos ayudarte?</label>
-          <select>
-            <option value="">Seleccioná un servicio</option>
-            <option>Finanzas Corporativas</option>
-            <option>Profesionalización de Áreas y Procesos</option>
-            <option>Outsourcing Contable</option>
-            <option>Asesoramiento Contable y Administrativo</option>
-            <option>No sé bien, quiero conversar</option>
-          </select>
-        </div>
-        <div class="form-group">
-          <label>Contanos más (opcional)</label>
-          <textarea placeholder="Describí brevemente tu empresa y cuál es el principal desafío que enfrentás..."></textarea>
-        </div>
-        <button class="btn btn-primary form-submit" onclick="handleSubmit(this)">Enviar mensaje →</button>
+
+          <div class="form-group">
+            <label for="telefono">Teléfono (opcional)</label>
+            <input id="telefono" name="telefono" type="tel" placeholder="+549 261 ...">
+          </div>
+
+          <div class="form-group">
+            <label for="servicio">¿En qué podemos ayudarte?</label>
+            <select id="servicio" name="servicio" required>
+              <option value="">Seleccioná un servicio</option>
+              <option>Finanzas Corporativas</option>
+              <option>Profesionalización de Áreas y Procesos</option>
+              <option>Outsourcing Contable</option>
+              <option>Asesoramiento Contable y Administrativo</option>
+              <option>No sé bien, quiero conversar</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="mensaje">Contanos más (opcional)</label>
+            <textarea id="mensaje" name="mensaje" placeholder="Describí brevemente tu empresa y cuál es el principal desafío que enfrentás..."></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-primary form-submit" id="submitBtn">
+            Enviar mensaje →
+          </button>
+
+          <p id="formMessage" style="margin-top:12px;font-size:14px;display:none;"></p>
+        </form>
       </div>
     </div>
   </div>
@@ -119,24 +135,95 @@
     <div class="footer-grid">
       <div class="footer-brand">
         <a href="index.html" class="logo logo-full">
-        <img src="img/logo-conzensus.svg" alt="Conzensus" class="logo-full-mark">
+          <img src="img/logo-conzensus.svg" alt="Conzensus" class="logo-full-mark">
         </a>
-        <p>Un equipo que te acompaña conectando ideas y resultados para tu empresa.</p></div>
-      <div class="footer-links"><h5>Sitio</h5><a href="index.html">Inicio</a><a href="servicios.html">Servicios</a><a href="equipo.html">Equipo</a><a href="blog.html">Blog</a><a href="contacto.html">Contacto</a></div>
-      <div class="footer-links"><h5>Servicios</h5><a href="servicios.html#finanzas">Finanzas Corporativas</a><a href="servicios.html#procesos">Profesionalización</a><a href="servicios.html#outsourcing">Outsourcing Contable</a><a href="servicios.html#asesoramiento">Asesoramiento Contable</a></div>
-      <div class="footer-contact"><h5>Contacto</h5><a href="tel:+5492614666936">+549 261 466 6936</a><a href="mailto:info@conzensus.ar">info@conzensus.ar</a></div>
+        <p>Un equipo que te acompaña conectando ideas y resultados para tu empresa.</p>
+      </div>
+
+      <div class="footer-links">
+        <h5>Sitio</h5>
+        <a href="index.html">Inicio</a>
+        <a href="servicios.html">Servicios</a>
+        <a href="equipo.html">Equipo</a>
+        <a href="blog.html">Blog</a>
+        <a href="contacto.html">Contacto</a>
+      </div>
+
+      <div class="footer-links">
+        <h5>Servicios</h5>
+        <a href="servicios.html#finanzas">Finanzas Corporativas</a>
+        <a href="servicios.html#procesos">Profesionalización</a>
+        <a href="servicios.html#outsourcing">Outsourcing Contable</a>
+        <a href="servicios.html#asesoramiento">Asesoramiento Contable</a>
+      </div>
+
+      <div class="footer-contact">
+        <h5>Contacto</h5>
+        <a href="tel:+5492614666936">+549 261 466 6936</a>
+        <a href="mailto:info@conzensus.ar">info@conzensus.ar</a>
+      </div>
     </div>
-    <div class="footer-bottom"><span>© 2025 Conzensus. Todos los derechos reservados.</span></div>
+
+    <div class="footer-bottom">
+      <span>© 2025 Conzensus. Todos los derechos reservados.</span>
+    </div>
   </div>
 </footer>
 
 <script>
-function handleSubmit(btn) {
-  btn.textContent = '¡Mensaje enviado! ✓';
-  btn.style.background = '#2a9d3a';
-  btn.disabled = true;
-}
+  const SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbz_YCaiRQ3XU9mpqHv1FXM3N0YoOB2fX1nLSOqgPpTJsb_JZKvjhVLKSt28UNf5hTwsbw/exec';
+
+  const form = document.getElementById('contactForm');
+  const submitBtn = document.getElementById('submitBtn');
+  const formMessage = document.getElementById('formMessage');
+
+  form.addEventListener('submit', async function (e) {
+    e.preventDefault();
+
+    submitBtn.disabled = true;
+    submitBtn.textContent = 'Enviando...';
+    formMessage.style.display = 'none';
+
+    const formData = {
+      nombre: form.nombre.value.trim(),
+      empresa: form.empresa.value.trim(),
+      email: form.email.value.trim(),
+      telefono: form.telefono.value.trim(),
+      servicio: form.servicio.value,
+      mensaje: form.mensaje.value.trim()
+    };
+
+    try {
+      const response = await fetch(SCRIPT_URL, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'text/plain;charset=utf-8'
+        },
+        body: JSON.stringify(formData)
+      });
+
+      const result = await response.json();
+
+      if (result.success) {
+        form.reset();
+        formMessage.textContent = '¡Gracias! Recibimos tu mensaje y te vamos a responder pronto.';
+        formMessage.style.color = '#2a9d3a';
+        formMessage.style.display = 'block';
+        submitBtn.textContent = 'Mensaje enviado ✓';
+      } else {
+        throw new Error(result.error || 'No se pudo enviar el formulario.');
+      }
+    } catch (error) {
+      formMessage.textContent = 'Hubo un problema al enviar el mensaje. Probá nuevamente o escribinos por WhatsApp.';
+      formMessage.style.color = '#c0392b';
+      formMessage.style.display = 'block';
+      submitBtn.disabled = false;
+      submitBtn.textContent = 'Enviar mensaje →';
+      console.error(error);
+    }
+  });
 </script>
+
 <script src="scripts.js"></script>
 </body>
 </html>
