@@ -413,25 +413,24 @@ main, .hero, .page-hero { animation: fadeInUp 0.5s ease both; }
 .footer .logo-full-mark {
   height: 42px;
 }
+/* BOTON AGENDAR REUNION EN NAV */
 .nav-booking {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  min-height: 52px;
-  padding: 0 26px;
+  height: 46px;
+  padding: 0 20px;
   border-radius: 999px;
-  border: 2px solid var(--yellow);
+  background: var(--yellow);
   color: var(--dark);
-  background: rgba(212,184,0,0.08);
-  font-size: 15px;
+  font-size: 14px;
   font-weight: 700;
   white-space: nowrap;
   transition: all 0.2s ease;
-  margin-left: 10px;
+  margin-left: 8px;
 }
 
 .nav-booking:hover {
-  background: var(--yellow);
-  color: var(--dark);
-  box-shadow: 0 8px 24px rgba(212,184,0,0.22);
+  transform: translateY(-1px);
+  box-shadow: 0 6px 18px rgba(212,184,0,0.35);
 }
