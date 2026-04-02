@@ -6,7 +6,7 @@
 <title>Equipo — Conzensus</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet"  crossorigin="anonymous">
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet" crossorigin="anonymous">
 <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -14,14 +14,16 @@
 <nav class="nav" id="nav">
   <div class="nav-inner">
     <a href="index.html" class="logo">
-      <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+      <svg width="32" height="32" viewBox="0 0 32 32" fill="none" aria-hidden="true">
         <path d="M16 3C10 3 5 8 5 14c0 4 2 7.5 5 9.5L16 29l6-5.5c3-2 5-5.5 5-9.5 0-6-5-11-11-11z" stroke="#D4B800" stroke-width="2" fill="none"/>
         <path d="M11 14c0-2.8 2.2-5 5-5s5 2.2 5 5" stroke="#D4B800" stroke-width="2" stroke-linecap="round"/>
         <path d="M9 17l4-3 3 2 4-4 3 2" stroke="#D4B800" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
       </svg>
       <span>conzensus</span>
     </a>
-    <button class="hamburger" id="hamburger"><span></span><span></span><span></span></button>
+    <button class="hamburger" id="hamburger" aria-label="Abrir menú">
+      <span></span><span></span><span></span>
+    </button>
     <ul class="nav-links" id="nav-links">
       <li><a href="index.html" class="nav-link">Inicio</a></li>
       <li><a href="servicios.html" class="nav-link">Servicios</a></li>
@@ -43,8 +45,13 @@
     <div class="team-grid">
 
       <div class="team-card">
-        <div class="tc-img" style="background:#D4B800;">
-          <span class="tc-initials">LS</span>
+        <div class="tc-img">
+          <img src="img/laura-samos.png" alt="Laura Samos">
+          <a href="https://www.linkedin.com/in/lsamos/" target="_blank" rel="noopener noreferrer" class="tc-linkedin" aria-label="LinkedIn de Laura Samos">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.851-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.35V9h3.414v1.561h.049c.476-.9 1.637-1.849 3.37-1.849 3.601 0 4.267 2.368 4.267 5.455v6.285zM5.337 7.433a2.062 2.062 0 1 1 0-4.124 2.062 2.062 0 0 1 0 4.124zM6.999 20.452H3.675V9h3.324v11.452z"/>
+            </svg>
+          </a>
         </div>
         <div class="tc-body">
           <div class="tc-role">Socia Fundadora</div>
@@ -54,8 +61,13 @@
       </div>
 
       <div class="team-card">
-        <div class="tc-img" style="background:#1a1a18;">
-          <span class="tc-initials" style="color:rgba(255,255,255,0.08)">ER</span>
+        <div class="tc-img">
+          <img src="img/emilia-rinaldoni.png" alt="Emilia Rinaldoni">
+          <a href="https://www.linkedin.com/in/erinaldoni/" target="_blank" rel="noopener noreferrer" class="tc-linkedin" aria-label="LinkedIn de Emilia Rinaldoni">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.851-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.35V9h3.414v1.561h.049c.476-.9 1.637-1.849 3.37-1.849 3.601 0 4.267 2.368 4.267 5.455v6.285zM5.337 7.433a2.062 2.062 0 1 1 0-4.124 2.062 2.062 0 0 1 0 4.124zM6.999 20.452H3.675V9h3.324v11.452z"/>
+            </svg>
+          </a>
         </div>
         <div class="tc-body">
           <div class="tc-role">Socia Fundadora</div>
@@ -65,8 +77,13 @@
       </div>
 
       <div class="team-card">
-        <div class="tc-img" style="background:#2a2a26;">
-          <span class="tc-initials" style="color:rgba(255,255,255,0.08)">LA</span>
+        <div class="tc-img">
+          <img src="img/lisandro-alonso.png" alt="Lisandro Alonso">
+          <a href="#" target="_blank" rel="noopener noreferrer" class="tc-linkedin" aria-label="LinkedIn de Lisandro Alonso">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.851-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.35V9h3.414v1.561h.049c.476-.9 1.637-1.849 3.37-1.849 3.601 0 4.267 2.368 4.267 5.455v6.285zM5.337 7.433a2.062 2.062 0 1 1 0-4.124 2.062 2.062 0 0 1 0 4.124zM6.999 20.452H3.675V9h3.324v11.452z"/>
+            </svg>
+          </a>
         </div>
         <div class="tc-body">
           <div class="tc-role">Socio</div>
@@ -76,8 +93,13 @@
       </div>
 
       <div class="team-card">
-        <div class="tc-img" style="background:#D4B800;">
-          <span class="tc-initials">AR</span>
+        <div class="tc-img">
+          <img src="img/antonella-rinaldoni.png" alt="Antonella Rinaldoni">
+          <a href="#" target="_blank" rel="noopener noreferrer" class="tc-linkedin" aria-label="LinkedIn de Antonella Rinaldoni">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.851-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.35V9h3.414v1.561h.049c.476-.9 1.637-1.849 3.37-1.849 3.601 0 4.267 2.368 4.267 5.455v6.285zM5.337 7.433a2.062 2.062 0 1 1 0-4.124 2.062 2.062 0 0 1 0 4.124zM6.999 20.452H3.675V9h3.324v11.452z"/>
+            </svg>
+          </a>
         </div>
         <div class="tc-body">
           <div class="tc-role">Profesional Asociada</div>
@@ -87,8 +109,13 @@
       </div>
 
       <div class="team-card">
-        <div class="tc-img" style="background:#1a1a18;">
-          <span class="tc-initials" style="color:rgba(255,255,255,0.08)">FR</span>
+        <div class="tc-img">
+          <img src="img/leandro-hazim.png" alt="Leandro Hazim">
+          <a href="#" target="_blank" rel="noopener noreferrer" class="tc-linkedin" aria-label="LinkedIn de Leandro Hazim">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.851-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.35V9h3.414v1.561h.049c.476-.9 1.637-1.849 3.37-1.849 3.601 0 4.267 2.368 4.267 5.455v6.285zM5.337 7.433a2.062 2.062 0 1 1 0-4.124 2.062 2.062 0 0 1 0 4.124zM6.999 20.452H3.675V9h3.324v11.452z"/>
+            </svg>
+          </a>
         </div>
         <div class="tc-body">
           <div class="tc-role">Profesional Asociado</div>
@@ -98,8 +125,13 @@
       </div>
 
       <div class="team-card">
-        <div class="tc-img" style="background:#2a2a26;">
-          <span class="tc-initials" style="color:rgba(255,255,255,0.08)">LC</span>
+        <div class="tc-img">
+          <img src="img/lucia-del-campo.png" alt="Lucía del Campo">
+          <a href="#" target="_blank" rel="noopener noreferrer" class="tc-linkedin" aria-label="LinkedIn de Lucía del Campo">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.851-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.35V9h3.414v1.561h.049c.476-.9 1.637-1.849 3.37-1.849 3.601 0 4.267 2.368 4.267 5.455v6.285zM5.337 7.433a2.062 2.062 0 1 1 0-4.124 2.062 2.062 0 0 1 0 4.124zM6.999 20.452H3.675V9h3.324v11.452z"/>
+            </svg>
+          </a>
         </div>
         <div class="tc-body">
           <div class="tc-role">Profesional Asociada</div>
@@ -107,10 +139,15 @@
           <p class="tc-bio">Contadora con 10 años de experiencia en consultoría contable y administrativa, especializada en análisis de datos. Maneja Power BI y Looker Studio para convertir grandes volúmenes de datos en información útil para la toma de decisiones estratégicas.</p>
         </div>
       </div>
-      
+
       <div class="team-card">
-        <div class="tc-img" style="background:#2a2a26;">
-          <span class="tc-initials" style="color:rgba(255,255,255,0.08)">LC</span>
+        <div class="tc-img">
+          <img src="img/celeste-corral.png" alt="Celeste Corral">
+          <a href="#" target="_blank" rel="noopener noreferrer" class="tc-linkedin" aria-label="LinkedIn de Celeste Corral">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.851-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.35V9h3.414v1.561h.049c.476-.9 1.637-1.849 3.37-1.849 3.601 0 4.267 2.368 4.267 5.455v6.285zM5.337 7.433a2.062 2.062 0 1 1 0-4.124 2.062 2.062 0 0 1 0 4.124zM6.999 20.452H3.675V9h3.324v11.452z"/>
+            </svg>
+          </a>
         </div>
         <div class="tc-body">
           <div class="tc-role">Profesional Asociada</div>
@@ -119,9 +156,14 @@
         </div>
       </div>
 
-            <div class="team-card">
-        <div class="tc-img" style="background:#2a2a26;">
-          <span class="tc-initials" style="color:rgba(255,255,255,0.08)">LC</span>
+      <div class="team-card">
+        <div class="tc-img">
+          <img src="img/belen-bioriza.png" alt="Belén Bioriza">
+          <a href="#" target="_blank" rel="noopener noreferrer" class="tc-linkedin" aria-label="LinkedIn de Belén Bioriza">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.851-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.35V9h3.414v1.561h.049c.476-.9 1.637-1.849 3.37-1.849 3.601 0 4.267 2.368 4.267 5.455v6.285zM5.337 7.433a2.062 2.062 0 1 1 0-4.124 2.062 2.062 0 0 1 0 4.124zM6.999 20.452H3.675V9h3.324v11.452z"/>
+            </svg>
+          </a>
         </div>
         <div class="tc-body">
           <div class="tc-role">Profesional Asociada</div>
@@ -130,9 +172,14 @@
         </div>
       </div>
 
-            <div class="team-card">
-        <div class="tc-img" style="background:#2a2a26;">
-          <span class="tc-initials" style="color:rgba(255,255,255,0.08)">LC</span>
+      <div class="team-card">
+        <div class="tc-img">
+          <img src="img/analia-aguilera.png" alt="Analía Aguilera">
+          <a href="#" target="_blank" rel="noopener noreferrer" class="tc-linkedin" aria-label="LinkedIn de Analía Aguilera">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.851-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.35V9h3.414v1.561h.049c.476-.9 1.637-1.849 3.37-1.849 3.601 0 4.267 2.368 4.267 5.455v6.285zM5.337 7.433a2.062 2.062 0 1 1 0-4.124 2.062 2.062 0 0 1 0 4.124zM6.999 20.452H3.675V9h3.324v11.452z"/>
+            </svg>
+          </a>
         </div>
         <div class="tc-body">
           <div class="tc-role">Profesional Asociada</div>
@@ -141,9 +188,14 @@
         </div>
       </div>
 
-            <div class="team-card">
-        <div class="tc-img" style="background:#2a2a26;">
-          <span class="tc-initials" style="color:rgba(255,255,255,0.08)">LC</span>
+      <div class="team-card">
+        <div class="tc-img">
+          <img src="img/marcia-vargas.png" alt="Marcia Vargas">
+          <a href="#" target="_blank" rel="noopener noreferrer" class="tc-linkedin" aria-label="LinkedIn de Marcia Vargas">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.851-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.35V9h3.414v1.561h.049c.476-.9 1.637-1.849 3.37-1.849 3.601 0 4.267 2.368 4.267 5.455v6.285zM5.337 7.433a2.062 2.062 0 1 1 0-4.124 2.062 2.062 0 0 1 0 4.124zM6.999 20.452H3.675V9h3.324v11.452z"/>
+            </svg>
+          </a>
         </div>
         <div class="tc-body">
           <div class="tc-role">Profesional Asociada</div>
@@ -152,27 +204,6 @@
         </div>
       </div>
 
-            <div class="team-card">
-        <div class="tc-img" style="background:#2a2a26;">
-          <span class="tc-initials" style="color:rgba(255,255,255,0.08)">LC</span>
-        </div>
-        <div class="tc-body">
-          <div class="tc-role">Profesional Asociada</div>
-          <div class="tc-name">Natalia Navarro</div>
-          <p class="tc-bio">Lorem ipsum</p>
-        </div>
-      </div>
-
-            <div class="team-card">
-        <div class="tc-img" style="background:#2a2a26;">
-          <span class="tc-initials" style="color:rgba(255,255,255,0.08)">LC</span>
-        </div>
-        <div class="tc-body">
-          <div class="tc-role">Profesional Asociado</div>
-          <div class="tc-name">Ariel Robles</div>
-          <p class="tc-bio">Lorem ipsum</p>
-        </div>
-      </div>
     </div>
   </div>
 
@@ -196,14 +227,44 @@
 <footer class="footer">
   <div class="container">
     <div class="footer-grid">
-      <div class="footer-brand"><a href="index.html" class="logo"><svg width="28" height="28" viewBox="0 0 32 32" fill="none"><path d="M16 3C10 3 5 8 5 14c0 4 2 7.5 5 9.5L16 29l6-5.5c3-2 5-5.5 5-9.5 0-6-5-11-11-11z" stroke="#D4B800" stroke-width="2" fill="none"/><path d="M11 14c0-2.8 2.2-5 5-5s5 2.2 5 5" stroke="#D4B800" stroke-width="2" stroke-linecap="round"/><path d="M9 17l4-3 3 2 4-4 3 2" stroke="#D4B800" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg><span>conzensus</span></a><p>Un equipo que te acompaña conectando ideas y resultados para tu empresa.</p></div>
-      <div class="footer-links"><h5>Sitio</h5><a href="index.html">Inicio</a><a href="servicios.html">Servicios</a><a href="equipo.html">Equipo</a><a href="blog.html">Blog</a><a href="contacto.html">Contacto</a></div>
-      <div class="footer-links"><h5>Servicios</h5><a href="servicios.html#finanzas">Finanzas Corporativas</a><a href="servicios.html#procesos">Profesionalización</a><a href="servicios.html#outsourcing">Outsourcing Contable</a><a href="servicios.html#asesoramiento">Asesoramiento Contable</a></div>
-      <div class="footer-contact"><h5>Contacto</h5><a href="tel:+5492617252297">+549 261 725 2297</a><a href="mailto:info@conzensus.ar">info@conzensus.ar</a></div>
+      <div class="footer-brand">
+        <a href="index.html" class="logo">
+          <svg width="28" height="28" viewBox="0 0 32 32" fill="none" aria-hidden="true">
+            <path d="M16 3C10 3 5 8 5 14c0 4 2 7.5 5 9.5L16 29l6-5.5c3-2 5-5.5 5-9.5 0-6-5-11-11-11z" stroke="#D4B800" stroke-width="2" fill="none"/>
+            <path d="M11 14c0-2.8 2.2-5 5-5s5 2.2 5 5" stroke="#D4B800" stroke-width="2" stroke-linecap="round"/>
+            <path d="M9 17l4-3 3 2 4-4 3 2" stroke="#D4B800" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          <span>conzensus</span>
+        </a>
+        <p>Un equipo que te acompaña conectando ideas y resultados para tu empresa.</p>
+      </div>
+      <div class="footer-links">
+        <h5>Sitio</h5>
+        <a href="index.html">Inicio</a>
+        <a href="servicios.html">Servicios</a>
+        <a href="equipo.html">Equipo</a>
+        <a href="blog.html">Blog</a>
+        <a href="contacto.html">Contacto</a>
+      </div>
+      <div class="footer-links">
+        <h5>Servicios</h5>
+        <a href="servicios.html#finanzas">Finanzas Corporativas</a>
+        <a href="servicios.html#procesos">Profesionalización</a>
+        <a href="servicios.html#outsourcing">Outsourcing Contable</a>
+        <a href="servicios.html#asesoramiento">Asesoramiento Contable</a>
+      </div>
+      <div class="footer-contact">
+        <h5>Contacto</h5>
+        <a href="tel:+5492617252297">+549 261 725 2297</a>
+        <a href="mailto:info@conzensus.ar">info@conzensus.ar</a>
+      </div>
     </div>
-    <div class="footer-bottom"><span>© 2025 Conzensus. Todos los derechos reservados.</span></div>
+    <div class="footer-bottom">
+      <span>© 2025 Conzensus. Todos los derechos reservados.</span>
+    </div>
   </div>
 </footer>
+
 <script src="scripts.js"></script>
 </body>
 </html>
